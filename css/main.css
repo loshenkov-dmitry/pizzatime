@@ -716,6 +716,12 @@ img {
   background-color: #ff7c21;
 }
 
+.is__active {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #1f1f1f;
+}
+
 @media (max-width: 1250px) {
   .catalog {
     margin: 0 -20px;
