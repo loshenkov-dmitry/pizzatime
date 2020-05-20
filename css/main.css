@@ -10,6 +10,10 @@ body {
   font-size: 16px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -343,7 +347,7 @@ img {
 }
 
 .header-page {
-  position: absolute;
+  position: fixed;
   padding: 9px 0;
   top: 0;
   left: 0;
@@ -436,6 +440,11 @@ img {
 .header-page__hamburger {
   display: none;
   margin-right: -15px;
+}
+
+.header-page.is-active .header-page__link {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media (max-width: 1200px) {
@@ -608,6 +617,7 @@ img {
   border-right: 1px solid #e5e5e5;
   -webkit-transition: border .2s, background .2s, color .2s;
   transition: border .2s, background .2s, color .2s;
+  outline: none;
 }
 
 .catalog-nav__btn:hover:not(.is-active) {
@@ -675,6 +685,7 @@ img {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   padding: 13px 33px;
+  outline: none;
 }
 
 .product__size.is-active {

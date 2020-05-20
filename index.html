@@ -24,15 +24,15 @@
             <div class="header-page__end">
                 <nav class="header-page__nav">
                     <ul class="header-page__ul">
-                        <li class="headef-page__li"><a href="#" class="header-page__link"><span class="header-page__text">пицца</span></a></li>
-                        <li class="headef-page__li"><a href="#" class="header-page__link"><span class="header-page__text">о нас</span></a></li>
-                        <li class="headef-page__li"><a href="#" class="header-page__link"><span class="header-page__text">контакты</span></a></li>
+                        <li class="headef-page__li"><a href="#" class="header-page__link" data-scroll-to="section-catalog"><span class="header-page__text">пицца</span></a></li>
+                        <li class="headef-page__li"><a href="#" class="header-page__link" data-scroll-to="section-about"><span class="header-page__text">о нас</span></a></li>
+                        <li class="headef-page__li"><a href="#" class="header-page__link" data-scroll-to="section-contacts"><span class="header-page__text">контакты</span></a></li>
                     </ul>
                 </nav>
             <div class="phone"><a href="tel:+79999999999" class="phone__item header-page__phone">+7 (999) 999 99 99</a>
             </div>
             <div class="header-page__hamburger">
-                <button class="btn-menu" type="button">
+                <button class="btn-menu" type="button" data-popup="popup-menu">
                     <span class="btn-menu__box"><span class="btn-menu__inner"></span></span>
                 </button>
             </div>
@@ -52,7 +52,7 @@
             <p class="section-top__info">от итальянского повара</p>
             <h1 class="section-top__title">Лучшая пицца в Москве</h1>
             <div class="section-top__btn">
-            <button class="btn" type="button">Выбрать</button>
+            <button class="btn" type="button" data-scroll-to="section-catalog">Выбрать</button>
         </div>
         </div>
     </section>
@@ -61,31 +61,31 @@
 
 <!-- Section-catalog -->
 
-<section class="section section-catalog">
+<section class="section section-catalog" id="section-catalog">
     <div class="container">
         <header class="section__header">
             <h2 class="page-title page-title--accent">Меню</h2>
             <nav class="catalog__nav">
                 <ul class="catalog-nav__wrapper">
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn is__active" type="button">все</button>
+                        <button class="catalog-nav__btn is__active" type="button" data-filter='all'>все</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">грибные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter='mushrooms'>грибные</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">мясные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter='meat'>мясные</button>
                     </li>
                     <li class="catalog-nav__item">
-                        <button class="catalog-nav__btn" type="button">сырные</button>
+                        <button class="catalog-nav__btn" type="button" data-filter='cheese'>сырные</button>
                     </li>
                 </ul>
             </nav>
         </header>
         <div class="catalog">
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='mushrooms'>
                 <div class="product">
-                    <img src="img/1.png" alt="1" class="product">
+                    <img src="img/1.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Салями</h3>
                         <p class="product__description">Салями, картофель и морковь, огурцы
@@ -102,14 +102,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='meat'>
                 <div class="product">
-                    <img src="img/2.png" alt="1" class="product">
+                    <img src="img/2.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Хит</h3>
                         <p class="product__description">Картофель и морковь, огурцы
@@ -127,14 +127,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='cheese'>
                 <div class="product">
-                    <img src="img/3.png" alt="1" class="product">
+                    <img src="img/3.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Ветчина-грибы</h3>
                         <p class="product__description">Салями, картофель и морковь, огурцы
@@ -152,14 +152,14 @@
                                 <span class="product__price-value">950</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='cheese'>
                 <div class="product">
-                    <img src="img/4.png" alt="1" class="product">
+                    <img src="img/4.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Карбонара</h3>
                         <p class="product__description">Салями, курица, моцарелла, говядина,
@@ -176,14 +176,14 @@
                                 <span class="product__price-value">880</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='cheese'>
                 <div class="product">
-                    <img src="img/5.png" alt="1" class="product">
+                    <img src="img/5.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Л-01</h3>
                         <p class="product__description">Томаты, моцарелла, цыпленок,
@@ -200,14 +200,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='meat'>
                 <div class="product">
-                    <img src="img/6.png" alt="1" class="product">
+                    <img src="img/6.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Фирменная</h3>
                         <p class="product__description">Томатно-сливочный соус, бекон, моцарелла</p>
@@ -223,14 +223,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='mushrooms'>
                 <div class="product">
-                    <img src="img/7.png" alt="1" class="product">
+                    <img src="img/7.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Ассорти</h3>
                         <p class="product__description">Картофель моцарелла, цыпленок, грибы,
@@ -247,14 +247,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='mushrooms'>
                 <div class="product">
-                    <img src="img/8.png" alt="1" class="product">
+                    <img src="img/8.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Три сыра</h3>
                         
@@ -271,14 +271,14 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item" data-category='mushrooms'>
                 <div class="product">
-                    <img src="img/9.png" alt="1" class="product">
+                    <img src="img/9.png" alt="1" class="product__img">
                     <div class="product__content">
                         <h3 class="product__title">Мясная</h3>
                         <p class="product__description">Курица, говядина, сливочный соус, салями,
@@ -296,7 +296,7 @@
                                 <span class="product__price-value">850</span>
                                 <span class="product__currency">&#8381;</span>
                             </div>
-                            <button type="button" class="btn product__btn">Заказать</button>
+                            <button type="button" class="btn product__btn" data-popup="popup-order">Заказать</button>
                         </div>
                     </foooter>
                 </div>
@@ -329,7 +329,7 @@
         </header>
         <div class="contacts">
             <div class="contacts__start">
-                <div class="contacts__map">
+                <div class="contacts__map" id='ymap'>
 
                 </div>
             </div>
@@ -413,12 +413,12 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
         <div class="popup__content popup__content--fluid popup__content--centered">
-    <button class="btn-close popup__btn-close"></button>
+    <button class="btn-close popup__btn-close popup__close"></button>
     <nav class="mobile-menu popup__mobile-menu">
         <ul class="mobile-menu__ul">
-            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link">Пицца</a></li>
-            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link">О нас</a></li>
-            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link">Контакты</a></li>
+            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link popup__close" data-scroll-to='section-contacts'>Пицца</a></li>
+            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link popup__close" data-scroll-to='section-about'>О нас</a></li>
+            <li class="mobile-menu__li"><a href="#" class="mobile-menu__link popup__close" data-scroll-to='section-contacts'>Контакты</a></li>
         </ul>
     </nav>
     <div class="phone popup__phone"><a href="tel:+79999999999" class="phone__item phone__item--accent">+7 (999) 999 99 99</a>
@@ -482,20 +482,20 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
         <div class="popup__content">
-    <button class="btn-close popup__btn-close"></button>
+    <button class="btn-close popup__btn-close popup__close"></button>
     <h2 class="page-title popup__title">Заполните форму</h2>
         <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
         <div class="order">
             <img class="order__img" src="img/1.png" alt="">
             <h3 class="order__title">
-                <span>Салями</span>
-                <span>850</span> &#8381;
+                <span class="order-product-title">Салями</span>
+                <span class="order-product-price">850</span> &#8381;
             </h3>
             <p class="order__size">35 см</p>        
             <form class="form">
-            <input type="hidden" name="Пицца">
-            <input type="hidden" name="Цена">
-            <input type="hidden" name="Размер">
+            <input class="order-info-title" type="hidden" name="Пицца">
+            <input class="order-info-price" type="hidden" name="Цена">
+            <input class="order-info-size" type="hidden" name="Размер">
             <input class="form__input" type="text" name="Имя" placeholder="Имя" required>
             <input class="form__input" type="text" name="Телефон" placeholder="Телефон" required>
             <input class="form__input" type="text" name="Адрес" placeholder="Адрес" required>
@@ -520,7 +520,7 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
         <div class="popup__content">
-    <button class="btn-close popup__btn-close"></button>
+    <button class="btn-close popup__btn-close popup__close"></button>
     <h2 class="page-title popup__title">Успешно отправлено</h2>
         <p class="popup__subtitle">Мы уже начали готовить вашу пиццу</p>
         </div>
@@ -534,7 +534,7 @@
     <div class="popup__wrapper">
         <div class="popup__inner">
         <div class="popup__content">
-    <button class="btn-close popup__btn-close"></button>
+    <button class="btn-close popup__btn-close popup__close"></button>
     <h2 class="page-title popup__title">Произошла ошибка</h2>
         <p class="popup__subtitle">Пожалуйста, сделайте заказ по телефону: <a class="popup__link" href="tel:+79999999999">+7 (999) 999-99-99</a></p>
         </div>
@@ -544,5 +544,17 @@
     </div>
 
 <!-- Pop-up error -->
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<!-- <script src="icon_customImage.js" type="text/javascript"></script> -->
+
+<script src="js/myLib.js"></script>
+<script src="js/header.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/scrollTo.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/product.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
